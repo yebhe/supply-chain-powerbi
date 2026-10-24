@@ -106,10 +106,49 @@ Le `Taux Livraison Couleur` utilise des seuils : ≥ 90 % vert, ≥ 80 % orange,
 ## 🗂️ Dossiers d'affichage
 
 ```
-Dashboard\
-  CA\ · Commandes\ · Expedition\ · Production\ · Profit\ · Stock\
-    1 Base  ·  2 Comparaison N-1  ·  3 Affichage carte
-Approvis\    Livraison\    Production\    Stockage\    Ventes\
-  1 Base  ·  2 Comparaison N-1  ·  3 Affichage carte
-Technique\   (codes couleur)
+_Mesures
+├── Dashboard
+│   ├── CA
+│   │   ├── 1 Base
+│   │   ├── 2 Comparaison N-1
+│   │   └── 3 Affichage carte
+│   ├── Commandes
+│   │   ├── 1 Base
+│   │   ├── 2 Comparaison N-1
+│   │   └── 3 Affichage carte
+│   ├── Expedition
+│   │   ├── 1 Base
+│   │   ├── 2 Comparaison N-1
+│   │   └── 3 Affichage carte
+│   ├── Production
+│   │   ├── 1 Base
+│   │   ├── 2 Comparaison N-1
+│   │   └── 3 Affichage carte
+│   ├── Profit
+│   │   ├── 1 Base
+│   │   └── 2 Comparaison N-1
+│   └── Stock
+│       ├── 1 Base
+│       ├── 2 Comparaison N-1
+│       └── 3 Affichage carte
+├── Approvis
+│   ├── 1 Base
+│   ├── 2 Comparaison N-1
+│   └── 3 Affichage carte
+├── Livraison
+│   ├── 1 Base
+│   ├── 2 Comparaison N-1
+│   └── 3 Affichage carte
+├── Production
+│   ├── 1 Base
+│   ├── 2 Comparaison N-1
+│   └── 3 Affichage carte
+├── Stockage
+│   ├── 1 Base
+│   └── 3 Affichage carte
+├── Ventes
+│   ├── 1 Base
+│   ├── 2 Comparaison N-1
+│   └── 3 Affichage carte
+└── Technique              (codes couleur)
 ```
