@@ -1,0 +1,20 @@
+# --- Power BI : fichiers locaux et caches ---
+.pbi/
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+*.pbix.bak
+*.pbi.tmp
+~$*.pbix
+
+# --- Données : ne pas redistribuer les CSV (voir data/README.md) ---
+data/*.csv
+*.csv
+
+# --- Système ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Éditeurs ---
+.vscode/
+.idea/
