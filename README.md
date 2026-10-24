@@ -133,7 +133,7 @@ erDiagram
 | `dim_supplier` | Fournisseurs | 7 |
 | `dim_facility` | Sites de production et de stockage | 6 |
 | `dim_customer` | Clients | 5 |
-| `_Mesures` | Table dédiée aux mesures DAX | — |
+| `_Mesures` | Table dédiée aux mesures DAX | 150 |
 | `Etape cascade` | Table de support du graphique en cascade | 4 |
 
 ---
