@@ -31,7 +31,7 @@ Ventes · Production · Stock · Achats · Livraisons
 
 ---
 
-## 🖼️ Aperçu du rapport
+## 📸 Aperçu du rapport
 
 ### Page de synthèse
 
@@ -168,7 +168,7 @@ Les couleurs sont centralisées dans des mesures `_Couleur bon / mauvais / neutr
 
 ---
 
-## ⚠️ Limites connues
+## 🚧 Limites connues
 
 - **Jeu de données synthétique et de petite taille** : 5 clients, 16 produits, 6 sites, 7 fournisseurs.
 - **Échelles non alignées entre production et capacité.** La production mensuelle (≈ 8 500 unités) est très inférieure à la capacité mensuelle des sites (≈ 353 000). Le `taux de remplissage %` est donc très bas (≈ 2,4 %). La formule est correcte, car la capacité est proportionnelle au nombre de mois sélectionnés : c'est le jeu de données qui n'est pas cohérent sur ce point.
@@ -185,7 +185,7 @@ Les couleurs sont centralisées dans des mesures `_Couleur bon / mauvais / neutr
 
 ---
 
-## 🗂️ Structure du dépôt
+## 📂 Structure du dépôt
 
 ```
 supply-chain-powerbi/
