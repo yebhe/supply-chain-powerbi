@@ -173,7 +173,6 @@ Les couleurs sont centralisées dans des mesures `_Couleur bon / mauvais / neutr
 - **Jeu de données synthétique et de petite taille** : 5 clients, 16 produits, 6 sites, 7 fournisseurs.
 - **Échelles non alignées entre production et capacité.** La production mensuelle (≈ 8 500 unités) est très inférieure à la capacité mensuelle des sites (≈ 353 000). Le `taux de remplissage %` est donc très bas (≈ 2,4 %). La formule est correcte, car la capacité est proportionnelle au nombre de mois sélectionnés : c'est le jeu de données qui n'est pas cohérent sur ce point.
 - **Dates de livraison sans relation avec `dim_date`.** Seules les dates de commande (achats) et d'expédition (livraisons) sont reliées au calendrier. Une analyse « par date d'arrivée » demanderait des relations inactives et `USERELATIONSHIP`.
-- **Pas de sécurité par rôles (RLS).**
 
 ---
 
