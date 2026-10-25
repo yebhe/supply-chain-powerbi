@@ -2,10 +2,11 @@
 
 # 📦 Supply Chain Dashboard
 
-**Tableau de bord Power BI de pilotage d'une chaîne d'approvisionnement**
+**Tableau de bord Power BI et Excel de pilotage d'une chaîne d'approvisionnement**
 Ventes · Production · Stock · Achats · Livraisons
 
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
 ![DAX](https://img.shields.io/badge/DAX-150%20mesures-0078D4?style=for-the-badge)
 ![Power Query](https://img.shields.io/badge/Power%20Query-M-217346?style=for-the-badge)
 ![Modèle](https://img.shields.io/badge/Mod%C3%A8le-en%20%C3%A9toile-6B7280?style=for-the-badge)
@@ -19,15 +20,17 @@ Ventes · Production · Stock · Achats · Livraisons
 ## 📑 Sommaire
 
 1. [Aperçu du rapport](#-aperçu-du-rapport)
-2. [Objectif](#-objectif)
-3. [Source des données](#-source-des-données)
-4. [Modèle de données](#-modèle-de-données)
-5. [Mesures DAX](#-mesures-dax)
-6. [Ouvrir le projet](#-ouvrir-le-projet)
-7. [Limites connues](#-limites-connues)
-8. [Pistes d'amélioration](#-pistes-damélioration)
-9. [Structure du dépôt](#-structure-du-dépôt)
-10. [Auteur](#-auteur)
+2. [Version Excel](#-version-excel)
+3. [Objectif](#-objectif)
+4. [Source des données](#-source-des-données)
+5. [Modèle de données](#-modèle-de-données)
+6. [Mesures DAX](#-mesures-dax)
+7. [Compétences démontrées](#-compétences-démontrées)
+8. [Ouvrir le projet](#-ouvrir-le-projet)
+9. [Limites connues](#-limites-connues)
+10. [Pistes d'amélioration](#-pistes-damélioration)
+11. [Structure du dépôt](#-structure-du-dépôt)
+12. [Auteur](#-auteur)
 
 ---
 
@@ -56,6 +59,27 @@ Un clic droit sur un produit, un client ou un fournisseur ouvre sa fiche détail
 | Fiche produit | Fiche client | Fiche fournisseur |
 |:---:|:---:|:---:|
 | ![Fiche produit](docs/7_drill_through_fiche_produit.png) | ![Fiche client](docs/8_drill_through_fiche_client.png) | ![Fiche fournisseur](docs/9_drill_through_fiche_fournisseur.png) |
+
+---
+
+## 📗 Version Excel
+
+Le même projet, refait de bout en bout **dans Excel** pour montrer la maîtrise de l'outil : import avec Power Query, modèle de données Power Pivot, mesures DAX, tableaux croisés dynamiques, segments et cartes KPI.
+
+![Dashboard Excel](docs/10_dashboard_excel.png)
+
+*Capture avec l'année 2024 sélectionnée.*
+
+| | |
+|---|---|
+| **Power Query** | 10 requêtes CSV paramétrées, typées et nettoyées |
+| **Modèle de données** | 11 tables : 5 faits, 5 dimensions, 1 table de mesures |
+| **DAX** | `CA net`, `Quantités vendues LY` (N-1), `Stock`, `Valeur du stock`, `Taux de defaut`… |
+| **Tableaux croisés dynamiques** | 18, connectés au modèle de données |
+| **Graphiques croisés** | 6, pilotés par 3 segments (année, mois, produit) |
+| **Cartes KPI** | 10 cartes dynamiques liées aux cellules |
+
+📁 [`excel/supply_chain_excel_dashboard.xlsx`](excel/supply_chain_excel_dashboard.xlsx) · Détail : [`excel/README.md`](excel/README.md)
 
 ---
 
@@ -133,7 +157,7 @@ erDiagram
 | `dim_supplier` | Fournisseurs | 7 |
 | `dim_facility` | Sites de production et de stockage | 6 |
 | `dim_customer` | Clients | 5 |
-| `_Mesures` | Table dédiée aux mesures DAX | 150 |
+| `_Mesures` | Table dédiée aux mesures DAX contenant 150 mesures | — |
 | `Etape cascade` | Table de support du graphique en cascade | 4 |
 
 ---
@@ -158,6 +182,20 @@ Les couleurs sont centralisées dans des mesures `_Couleur bon / mauvais / neutr
 
 ---
 
+## 🧠 Compétences démontrées
+
+| Domaine | Power BI | Excel |
+|---|---|---|
+| **Import et nettoyage (Power Query)** | 10 requêtes CSV, source paramétrée | Les mêmes 10 requêtes, paramétrées |
+| **Modélisation** | Modèle en étoile : 5 faits, 5 dimensions, 16 relations | Modèle de données : 11 tables |
+| **DAX** | ~150 mesures : N-1, cumul annuel, dernier stock, couleurs conditionnelles | 9 mesures nommées, dont N-1 |
+| **Visualisation** | Dashboard, 6 pages, 3 pages drill-through | Dashboard, 6 graphiques croisés, 3 segments |
+| **Interactivité** | Drill-through, segments | Segments, cartes liées aux cellules |
+| **Qualité du modèle** | Table de mesures dédiée, dossiers d'affichage, nommage cohérent | Tableaux croisés nommés, feuille de calculs séparée |
+| **Documentation** | README, schéma du modèle, liste des mesures | README du dossier `excel/` |
+
+---
+
 ## 🚀 Ouvrir le projet
 
 1. Télécharger les CSV (voir [`data/README.md`](data/README.md)) dans un dossier local.
@@ -165,6 +203,8 @@ Les couleurs sont centralisées dans des mesures `_Couleur bon / mauvais / neutr
 3. **Accueil → Transformer les données → Gérer les paramètres**, puis renseigner `Chemin_source` avec le chemin du dossier contenant les CSV, **sans antislash final**.
    Exemple : `C:\data\supply_chain`
 4. Cliquer sur **Actualiser**.
+
+La version Excel s'ouvre directement : les données sont déjà chargées (voir [`excel/README.md`](excel/README.md)).
 
 ---
 
@@ -192,6 +232,9 @@ supply-chain-powerbi/
 ├── README.md                      ← ce fichier
 ├── .gitignore
 ├── supply_chain_dashboard.pbix    ← rapport Power BI
+├── excel/
+│   ├── supply_chain_excel_dashboard.xlsx   ← version Excel
+│   └── README.md
 ├── data/
 │   └── README.md                  ← où télécharger les CSV
 ├── docs/

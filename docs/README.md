@@ -1,10 +1,10 @@
-# Galerie du rapport
+# 🖼️ Galerie du rapport
 
 ## Modèle de données
 
 ![Modèle relationnel](modele_relationnel.png)
 
-## Pages du rapport
+## Pages du rapport Power BI
 
 | Page | Capture |
 |---|---|
@@ -24,3 +24,7 @@
 ## Mesures
 
 ![Mesures et tables](mesures_et_tables.png)
+
+## Version Excel
+
+![Dashboard Excel](10_dashboard_excel.png)
