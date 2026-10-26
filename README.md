@@ -9,7 +9,7 @@ Ventes · Production · Stock · Achats · Livraisons
 ![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
 ![DAX](https://img.shields.io/badge/DAX-150%20mesures-0078D4?style=for-the-badge)
 ![Power Query](https://img.shields.io/badge/Power%20Query-M-217346?style=for-the-badge)
-![Modèle](https://img.shields.io/badge/Mod%C3%A8le-en%20%C3%A9toile-6B7280?style=for-the-badge)
+![Modèle](https://img.shields.io/badge/Mod%C3%A8le-constellation-6B7280?style=for-the-badge)
 
 </div>
 
@@ -119,7 +119,7 @@ Les fichiers CSV **ne sont pas inclus dans ce dépôt**. La procédure de télé
 
 ## 🧱 Modèle de données
 
-Modèle en étoile : **5 tables de faits**, **5 dimensions**, **16 relations** plusieurs-à-un (filtrage unidirectionnel).
+Modèle en constellation : **5 tables de faits** qui partagent **5 dimensions**, reliées par **16 relations** plusieurs-à-un (filtrage unidirectionnel). Chaque fait forme un schéma en étoile avec ses dimensions, et les dimensions communes (`dim_date`, `dim_product`…) permettent d'analyser plusieurs faits avec les mêmes filtres.
 
 ![Modèle relationnel](docs/modele_relationnel.png)
 
@@ -187,7 +187,7 @@ Les couleurs sont centralisées dans des mesures `_Couleur bon / mauvais / neutr
 | Domaine | Power BI | Excel |
 |---|---|---|
 | **Import et nettoyage (Power Query)** | 10 requêtes CSV, source paramétrée | Les mêmes 10 requêtes, paramétrées |
-| **Modélisation** | Modèle en étoile : 5 faits, 5 dimensions, 16 relations | Modèle de données : 11 tables |
+| **Modélisation** | Modèle en constellation : 5 faits, 5 dimensions partagées, 16 relations | Modèle de données : 11 tables |
 | **DAX** | ~150 mesures : N-1, cumul annuel, dernier stock, couleurs conditionnelles | 9 mesures nommées, dont N-1 |
 | **Visualisation** | Dashboard, 6 pages, 3 pages drill-through | Dashboard, 6 graphiques croisés, 3 segments |
 | **Interactivité** | Drill-through, segments | Segments, cartes liées aux cellules |

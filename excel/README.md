@@ -23,7 +23,7 @@ CSV  →  Power Query  →  Modèle de données  →  Mesures DAX  →  Tableaux
 | Domaine | Détail |
 |---|---|
 | **Power Query** | Requêtes paramétrées, nettoyage et typage, gestion des formats régionaux |
-| **Modélisation** | Modèle en étoile dans Power Pivot : les segments sur `dim_date` et `dim_product` filtrent toutes les tables de faits |
+| **Modélisation** | Modèle en constellation dans Power Pivot : 5 faits qui partagent leurs dimensions, donc les segments sur `dim_date` et `dim_product` filtrent toutes les tables de faits |
 | **DAX** | Mesures de somme, de ratio et de stock, plus la comparaison à l'année précédente (N-1) |
 | **Tableaux croisés dynamiques** | 18 tableaux, un par indicateur ou par graphique |
 | **Graphiques croisés dynamiques** | Courbe, barres et barres groupées, reliés aux segments |
