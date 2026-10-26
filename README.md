@@ -11,6 +11,15 @@ Ventes · Production · Stock · Achats · Livraisons
 ![Power Query](https://img.shields.io/badge/Power%20Query-M-217346?style=for-the-badge)
 ![Modèle](https://img.shields.io/badge/Mod%C3%A8le-constellation-6B7280?style=for-the-badge)
 
+<br>
+
+[![Télécharger le .pbix](https://img.shields.io/badge/T%C3%A9l%C3%A9charger%20le%20.pbix-0F7B84?style=for-the-badge&logo=powerbi&logoColor=white)](supply_chain_dashboard.pbix?raw=true)
+[![Télécharger le .xlsx](https://img.shields.io/badge/T%C3%A9l%C3%A9charger%20le%20.xlsx-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)](excel/supply_chain_excel_dashboard.xlsx?raw=true)
+[![Données](https://img.shields.io/badge/Donn%C3%A9es-0F7B84?style=for-the-badge&logo=files&logoColor=white)](data/README.md)
+[![Mesures DAX](https://img.shields.io/badge/Mesures%20DAX-0F7B84?style=for-the-badge&logo=readthedocs&logoColor=white)](measures/mesures_dax.md)
+[![Galerie](https://img.shields.io/badge/Galerie-0F7B84?style=for-the-badge&logo=googlephotos&logoColor=white)](docs/README.md)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yebhe/)
+
 </div>
 
 > ⚠️ **Projet d'apprentissage.** Il repose sur un jeu de données public et **n'est affilié ni à Samsung ni à aucune autre marque citée**. Les noms de produits proviennent du jeu de données.
